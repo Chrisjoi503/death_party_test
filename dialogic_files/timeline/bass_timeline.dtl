@@ -1,0 +1,15 @@
+- What's your costume?
+	join bass left
+	bass: Im a Bass
+	leave bass
+	join player right
+	player: ...with a bass?
+	leave player
+	join "bass with a bass" left
+	"bass with a bass": Wait true, I am a bass with a bass!
+- Nice Bass!
+	join bass left
+	bass: No thanks. Im not interested.
+- There is something fishy about you
+	join bass left
+	bass: ...
