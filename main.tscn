@@ -88,6 +88,10 @@ shape = SubResource("CylinderShape3D_1bvp3")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.12565, 0)
 mesh = SubResource("CylinderMesh_lquwl")
 
+[node name="MeshInstance3D" type="MeshInstance3D" parent="NPC/MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.7603, 0.0443267, 0.231046)
+mesh = SubResource("CylinderMesh_lquwl")
+
 [node name="InteractionDetector" parent="NPC" instance=ExtResource("6_272bh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, -0.184765, 1)
 

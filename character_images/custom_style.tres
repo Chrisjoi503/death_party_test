@@ -40,6 +40,7 @@ overrides = {
 "box_animation_out": "1",
 "box_color_custom": "Color(0.277771, 0.47258, 0.960938, 1)",
 "box_color_use_global": "false",
+"box_size": "Vector2(300, 550)",
 "name_label_box_modulate": "Color(0.185547, 0.185547, 0.185547, 1)",
 "name_label_box_use_global_color": "false",
 "name_label_custom_color": "Color(0.278431, 0.47451, 0.960784, 1)",
@@ -84,4 +85,4 @@ layer_info = {
 }
 base_overrides = {}
 layers = Array[ExtResource("2_k4y2h")]([])
-metadata/_latest_layer = "13"
+metadata/_latest_layer = "17"
