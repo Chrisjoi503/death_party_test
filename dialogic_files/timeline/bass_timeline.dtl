@@ -3,11 +3,12 @@
 	bass: Im a Bass
 	leave bass
 	[wait time="0.1"]
-	[style name="new_style"]
+	[style name="player_style"]
 	join player right
 	player: ...with a bass?
 	leave player
-	[style name="custom_style"]
+	[wait time="0.1"]
+	[style name="bass_style"]
 	join "bass with a bass" left
 	"bass with a bass": Wait true, I am a bass with a bass!
 - Nice Bass!

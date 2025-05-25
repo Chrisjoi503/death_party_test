@@ -23,23 +23,27 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 [dialogic]
 
 directories/dch_directory={
+"Jax": "res://Jax.dch",
 "bass": "res://dialogic_files/characters/bass.dch",
 "bass with a bass": "res://dialogic_files/characters/bass with a bass.dch",
+"creepy_pikachu": "res://creepy_pikachu.dch",
 "player": "res://dialogic_files/characters/player.dch",
 "player_two": "res://character_images/player_two.dch",
 "unit_test_character": "res://Tests/Resources/unit_test_character.dch"
 }
 directories/dtl_directory={
 "bass_timeline": "res://dialogic_files/timeline/bass_timeline.dtl",
+"creepy_pikachu_timeline": "res://creepy_pikachu_timeline.dtl",
 "stairs_timeline": "res://character_images/stairs_timeline.dtl",
 "timeline": "res://timeline.dtl"
 }
 layout/style_directory={
 "": "res://character_images/custom_style.tres",
-"custom_style": "res://character_images/custom_style.tres",
-"new_style": "res://character_images/new_style.tres"
+"bass_style": "res://character_images/custom_style.tres",
+"pika_style": "res://character_images/pika_style.tres",
+"player_style": "res://character_images/new_style.tres"
 }
-layout/style_list=["res://character_images/custom_style.tres", "res://character_images/new_style.tres"]
+layout/style_list=["res://character_images/custom_style.tres", "res://character_images/new_style.tres", "res://character_images/pika_style.tres"]
 layout/default_style="res://character_images/custom_style.tres"
 variables={}
 extensions_folder="res://addons/dialogic_additions"
@@ -75,6 +79,7 @@ audio/channel_defaults={
 "volume": 0.0
 }
 }
+glossary/default_case_sensitive=true
 
 [editor_plugins]
 

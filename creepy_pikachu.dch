@@ -2,7 +2,7 @@
 "@path": "res://addons/dialogic/Resources/character.gd",
 "@subpath": NodePath(""),
 &"_translation_id": "",
-&"color": Color(0.939453, 0.607743, 0.28624, 1),
+&"color": Color(1, 1, 1, 1),
 &"custom_info": {
 "prefix": "",
 "sound_mood_default": "",
@@ -12,18 +12,27 @@
 },
 &"default_portrait": "New portrait",
 &"description": "",
-&"display_name": "player",
+&"display_name": "CREEPY PIKACHU",
 &"mirror": false,
 &"nicknames": [""],
 &"offset": Vector2(0, 0),
 &"portraits": {
 "New portrait": {
 "export_overrides": {
-"image": "\"res://character_images/player.png\""
+"image": "\"res://character_images/creepy_pika.png\""
 },
 "mirror": false,
-"offset": Vector2(0, 0),
-"scale": 1.0,
+"offset": Vector2(-430, 425),
+"scale": 0.85,
+"scene": ""
+},
+"small": {
+"export_overrides": {
+"image": "\"res://character_images/creepy_pika.png\""
+},
+"mirror": false,
+"offset": Vector2(0, -750),
+"scale": 0.25,
 "scene": ""
 }
 },

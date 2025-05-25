@@ -70,7 +70,7 @@ overrides = {}
 
 [resource]
 script = ExtResource("11_oia5q")
-name = "custom_style"
+name = "bass_style"
 layer_list = Array[String](["10", "11", "12", "13", "14", "15", "16", "17"])
 layer_info = {
 "": SubResource("Resource_3xjmw"),
@@ -85,4 +85,4 @@ layer_info = {
 }
 base_overrides = {}
 layers = Array[ExtResource("2_k4y2h")]([])
-metadata/_latest_layer = "17"
+metadata/_latest_layer = "13"

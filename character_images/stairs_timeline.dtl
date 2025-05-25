@@ -1,3 +1,4 @@
-[style name="new_style"]
+[wait time="0.1"]
+[style name="player_style"]
 join player_two center
 player_two: It looks scary upstairs.

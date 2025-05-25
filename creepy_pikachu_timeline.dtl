@@ -1,0 +1,12 @@
+[style name="pika_style"]
+[background arg="res://character_images/background.png" fade="0.0"]
+join creepy_pikachu left
+join Jax (small) center
+creepy_pikachu: pika...pika...Do you know what it feels like to smile so long your cheeks tear?
+- What are you talking about? I don't understand.
+- i get it...
+creepy_pikachu: I was the life of the party. Every Birthday. Every mall. Every kid with sticky fingers and wide eyes. They all screamed when I showed up. And screamed louder when I didn't leave.
+- Are you...okay?
+[wait time="0.1"]
+update creepy_pikachu (small) [fade="Fade Cross"]
+Jax: YOU keep looking over your shoulder like the demon's rght behind you. It's not. That's not how it works. It doesn't crawl up your spine. It doesn't burst through walls. It waits. It listens. And then it shows you the one thing you've been hiding from everyone - even yourself. That's how it kills.

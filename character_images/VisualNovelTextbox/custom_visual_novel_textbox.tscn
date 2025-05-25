@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://cf0iwrtoqbhfo"]
+[gd_scene load_steps=18 format=3 uid="uid://cf0iwrtoqbhfo"]
 
 [ext_resource type="Script" uid="uid://bl43m5qw8pso3" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Textbox/vn_textbox_layer.gd" id="1_bpydr"]
 [ext_resource type="Script" uid="uid://bfc03rn8slceu" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Textbox/animations.gd" id="2_xy7a2"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://b0rpqfg4fhebk" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Textbox/next.svg" id="6_uch03"]
 [ext_resource type="Script" uid="uid://bak74s0kcr0ao" path="res://addons/dialogic/Modules/Text/node_name_label.gd" id="7_bi7sh"]
 [ext_resource type="StyleBox" uid="uid://m7gyepkysu83" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Textbox/vn_textbox_name_label_panel.tres" id="9_yg8ig"]
+[ext_resource type="Texture2D" uid="uid://cguavc0eg550q" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_SpeakerPortraitTextbox/pika_textbox.tres" id="11_u5g10"]
 
 [sub_resource type="Animation" id="Animation_au0a2"]
 length = 0.001
@@ -83,7 +84,7 @@ tracks/0/path = NodePath("Anchor/AnimationParent/Sizer/DialogTextPanel:rotation"
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"handle_modes": PackedInt32Array(3, 3, 3, 3, 3),
+"handle_modes": PackedInt32Array(0, 0, 0, 0, 0),
 "points": PackedFloat32Array(0, -0.025, 0, 0.025, 0, 0.005, -0.025, 0, 0.025, 0, -0.005, -0.025, 0, 0.025, 0, 0.005, -0.025, 0, 0.025, 0, 0, -0.025, 0, 0.025, 0),
 "times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4)
 }
@@ -207,11 +208,15 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = -190.0
+offset_top = -706.0
+offset_right = 849.0
+offset_bottom = -234.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 script = ExtResource("1_bpydr")
-box_panel = "res://character_images/VisualNovelTextbox/vn_textbox_default_panel.tres"
+box_panel = "uid://cguavc0eg550q"
 box_size = Vector2(550, 150)
 name_label_box_panel = "res://character_images/VisualNovelTextbox/vn_textbox_name_label_panel.tres"
 name_label_box_modulate = Color(0, 0, 0, 1)
@@ -260,6 +265,9 @@ grow_horizontal = 2
 grow_vertical = 0
 mouse_filter = 2
 
+[node name="PikaTextbox" type="Sprite2D" parent="Anchor/AnimationParent/Sizer"]
+texture = ExtResource("11_u5g10")
+
 [node name="DialogTextPanel" type="PanelContainer" parent="Anchor/AnimationParent/Sizer"]
 unique_name_in_owner = true
 self_modulate = Color(0.00784314, 0.00784314, 0.00784314, 0.843137)
@@ -267,7 +275,10 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 128.0
+offset_left = -167.0
+offset_top = -72.0
+offset_right = 196.0
+offset_bottom = -17.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
@@ -318,24 +329,33 @@ value = 0.5
 show_percentage = false
 script = ExtResource("6_07xym")
 
-[node name="NameLabelHolder" type="Control" parent="Anchor/AnimationParent/Sizer/DialogTextPanel"]
+[node name="NameLabelHolder" type="Control" parent="Anchor/AnimationParent/Sizer"]
 layout_mode = 2
+anchors_preset = 0
+offset_left = -478.5
+offset_top = -151.0
+offset_right = 489.5
+offset_bottom = 175.0
 mouse_filter = 2
 
-[node name="NameLabelPanel" type="PanelContainer" parent="Anchor/AnimationParent/Sizer/DialogTextPanel/NameLabelHolder"]
+[node name="NameLabelPanel" type="PanelContainer" parent="Anchor/AnimationParent/Sizer/NameLabelHolder"]
 unique_name_in_owner = true
 self_modulate = Color(0.00784314, 0.00784314, 0.00784314, 0.843137)
 layout_mode = 1
-offset_top = -50.0
-offset_right = 9.0
-offset_bottom = -25.0
+anchors_preset = -1
+anchor_top = 0.144
+anchor_right = 0.129
+anchor_bottom = 0.261
+offset_top = -46.944
+offset_right = -95.872
+offset_bottom = -53.086
 mouse_filter = 2
 theme_override_styles/panel = ExtResource("9_yg8ig")
 metadata/_edit_layout_mode = 1
 metadata/_edit_use_custom_anchors = true
 metadata/_edit_group_ = true
 
-[node name="DialogicNode_NameLabel" type="Label" parent="Anchor/AnimationParent/Sizer/DialogTextPanel/NameLabelHolder/NameLabelPanel" node_paths=PackedStringArray("name_label_root")]
+[node name="DialogicNode_NameLabel" type="Label" parent="Anchor/AnimationParent/Sizer/NameLabelHolder/NameLabelPanel" node_paths=PackedStringArray("name_label_root")]
 unique_name_in_owner = true
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
